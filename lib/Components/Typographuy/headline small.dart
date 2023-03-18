@@ -10,13 +10,13 @@ class Headline_small extends StatefulWidget {
 class _Headline_smallState extends State<Headline_small> {
   @override
   Widget build(BuildContext context) {
-    return Text("HeadLine small,",
+    return Text("Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum",
     style: TextStyle(
       fontFamily: "Roboto",
       fontWeight: FontWeight.w400,
       fontSize: 20,
      height:32/20,//line height=font size*height in flutter.need to change the values
-      color: Colors.black
+      color:Theme.of(context).colorScheme.onSecondaryContainer
     ),);
   }
 }

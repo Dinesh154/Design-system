@@ -13,6 +13,14 @@ class _filled_buttonState extends State<filled_button> {
     return Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         FilledButton(
+          style: ButtonStyle(backgroundColor:
+              MaterialStateProperty.resolveWith<Color>((states) {
+                if(states.contains( MaterialState.pressed))
+                {
+                  return Colors.green;
+                }
+            return Theme.of(context).colorScheme.inversePrimary;
+          })),
           onPressed: () {},
           //we need to custamize the button with the two icons.
           child: Text("Enabeld"),

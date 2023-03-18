@@ -1,6 +1,9 @@
+import 'package:design_system/Components/Typographuy/widget_screen.dart';
+import 'package:design_system/Components/widgets/Side_sheet.dart';
+import 'package:design_system/Components/widgets/Tabs_widget.dart';
 import 'package:design_system/design.dart';
 import 'package:flutter/material.dart';
-
+enum SampleItem { itemOne, itemTwo, itemThree }
 void main() {
   runApp(const MyApp());
 }
@@ -13,8 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
+        
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -59,7 +64,7 @@ class MyApp extends StatelessWidget {
   scrim: Color(0xFF000000),
 )
       ),
-      home: Design(),
+      home: Widget_screen(),
     );
   }
 }
